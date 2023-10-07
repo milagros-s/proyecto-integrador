@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando en ello,sitio en desarrollo</title>
+</head>ss
+<body>
+    <div class="form-control">
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <input type="text"  placeholder="Nombre" aria-label="Nombre" required="">
+            </div>
+            <div class="col">
+                <input type="text"  placeholder="Apellido" aria-label="Apellido" id="apellido" required="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="email"  placeholder="Email" aria-label="Email" id="mail" required="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="cantidadTickets" class="form-label">Cantidad</label>
+                <input type="number"  placeholder="Cantidad" aria-label="Cantidad" id="cantidadTickets" min="1" required="">
+            </div>
+            <div class="col">
+                <label for="categoriaSelect" class="form-label">Categoría</label>
+                <select class="form-control" aria-label="Categoría" id="categoriaSelect">
+                    <option value="" selected>-- Seleccione --</option>
+                    <option value="0">Sin Categoria</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
+                </select>
+            </div>
+        </div>
+        <div class="alert" role="alert">
+            Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="reset" class="btn-form" id="btnBorrar">Borrar</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn-form" id="btnResumen">Resumen</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
